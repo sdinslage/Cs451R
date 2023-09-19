@@ -1,0 +1,17 @@
+.umkc-header {
+    font-size: 14px;  /* Job Evaluation text size */
+    color: white;
+    font-weight: bold;
+  }
+  
+  .umkc-search-container {
+    max-width: 1000px;      
+  }
+
+  .bg-umkc-blue {
+    background-color: #1568c8;
+  }
+
+  .text-white {
+    color: white;
+  }

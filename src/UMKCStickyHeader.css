@@ -1,0 +1,18 @@
+.umkc-header {
+    font-size: 14px;  
+    color: white;
+    font-weight: bold;
+}
+
+.umkc-search-container {
+    max-height: 10px;      
+}
+
+.bg-umkc-blue {
+    background-color: #1568c8;
+    padding: 5px 0;  /* Adjusted padding to 5px top and bottom, 0 left and right */
+}
+
+.text-white {
+    color: white;
+}
