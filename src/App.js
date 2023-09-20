@@ -4,13 +4,12 @@ import UMKCTopHeader from './UMKCTopHeader';
 import UMKCJobEvalHeader from './UMKCJobEvalHeader';
 import UMKCStickyHeader from './UMKCStickyHeader';
 
-
 function App() {
   const [showStickyHeader, setShowStickyHeader] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY >= 220) {
         setShowStickyHeader(true);
       } else {
         setShowStickyHeader(false);
@@ -27,9 +26,28 @@ function App() {
   return (
     <div className="App-container">
       <UMKCTopHeader />
-      {showStickyHeader ? <UMKCStickyHeader /> : <UMKCJobEvalHeader />}
+      <UMKCJobEvalHeader />
+      <UMKCStickyHeader className={showStickyHeader ? 'sd-sticky-header-visible' : 'sd-sticky-header-hidden'} />
       <h2>General Guidelines:</h2>
       <ul>
+        <li>You must be GTA certified to work as a lab instructor. More information on the certification process can be found <a href="https://catalog.umkc.edu/general-graduate-academic-regulations-information/international-graduate-student-academic-regulations/">here</a>. </li>
+        <li>If you are not GTA certified, you may only apply for Grader positions.</li>
+        <li>GTA certification for international students can only be waived with a previous degree from a US institute.</li>
+        <li>International F-1 students are limited to 20 hours/week and domestic students/PR card holders are limited to 28 hours/week.</li>
+        <li>We ARE NOT hiring for any instructor positions at this time.</li>
+        <li>Please do not include any courses not mentioned in your application as this will not help your potential employment.</li>
+        <li>DO NOT include a copy of a CV/resume, cover letter, or reference letters as that will not help your potential employment.</li>
+        <li>Please do not openly solicit for employment outside of this hiring period as we do not keep resumes/CVs on file.</li>
+        <li>All positions will be chosen by November 1st. If you have not heard from anyone in the CSEE Department by November 1st, you were not chosen for a position.</li>
+        <li>You must be GTA certified to work as a lab instructor. More information on the certification process can be found <a href="https://catalog.umkc.edu/general-graduate-academic-regulations-information/international-graduate-student-academic-regulations/">here</a>. </li>
+        <li>If you are not GTA certified, you may only apply for Grader positions.</li>
+        <li>GTA certification for international students can only be waived with a previous degree from a US institute.</li>
+        <li>International F-1 students are limited to 20 hours/week and domestic students/PR card holders are limited to 28 hours/week.</li>
+        <li>We ARE NOT hiring for any instructor positions at this time.</li>
+        <li>Please do not include any courses not mentioned in your application as this will not help your potential employment.</li>
+        <li>DO NOT include a copy of a CV/resume, cover letter, or reference letters as that will not help your potential employment.</li>
+        <li>Please do not openly solicit for employment outside of this hiring period as we do not keep resumes/CVs on file.</li>
+        <li>All positions will be chosen by November 1st. If you have not heard from anyone in the CSEE Department by November 1st, you were not chosen for a position.</li>
         <li>You must be GTA certified to work as a lab instructor. More information on the certification process can be found <a href="https://catalog.umkc.edu/general-graduate-academic-regulations-information/international-graduate-student-academic-regulations/">here</a>. </li>
         <li>If you are not GTA certified, you may only apply for Grader positions.</li>
         <li>GTA certification for international students can only be waived with a previous degree from a US institute.</li>

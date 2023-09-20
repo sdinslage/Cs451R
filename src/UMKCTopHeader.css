@@ -24,3 +24,12 @@
             #1568c8 6px
         );
   }
+
+  .sd-sticky-header-hidden {
+    top: -100px; /* adjust this to the actual height of the sticky header */
+    transition: top 0.3s; /* optional: smooth transition */
+  }
+  
+  .sd-sticky-header-visible {
+    top: 0;
+  }

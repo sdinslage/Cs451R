@@ -1,9 +1,10 @@
 import React from 'react';
 import './UMKCStickyHeader.css';
 
-function UMKCStickyHeader() {
-    return (
-      <div className="container-fluid sd-sticky-header bg-umkc-blue" style={{ display: "block", position: 'sticky', top: 0, zIndex: 1000 }}>
+function UMKCStickyHeader({ className }) {
+  return (
+    <div className={`container-fluid sd-sticky-header bg-umkc-blue ${className}`} 
+         style={{ display: "block", position: 'fixed', width: '100%', zIndex: 1000 }}>
         <div style={{ display: "flex", alignItems: "flex-end", padding: "16px", marginLeft: "25px" }}>
           
           <div className="logo" style={{ marginRight: "80px" }}>  {/* Adjusted the marginRight here */}
